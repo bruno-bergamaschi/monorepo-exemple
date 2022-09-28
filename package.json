@@ -1,0 +1,24 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/shared/*"
+    ]
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Bruno Bergamaschi <brunobergamaschi@live.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@monorepo/eslint-config": "*",
+    "@types/jest": "^29.0.3",
+    "jest": "^29.0.3",
+    "ts-jest": "^29.0.1",
+    "typescript": "^4.8.3"
+  }
+}
